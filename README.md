@@ -1,4 +1,4 @@
-# tng-persona
+# tng-computer-persona
 
 Deterministic preprocessing pipeline for `Star Trek: The Next Generation` dialogue and Enterprise computer interactions.
 
@@ -10,6 +10,7 @@ This repository is the TNG-specific companion to the broader Star Trek computer 
 - training JSONL for both general TNG persona work and computer-specific tuning
 
 This is now the canonical home for the TNG Enterprise computer persona work that previously lived in `enterprise-computer` and `startrek-computer`.
+The dedicated Data persona lives in the sibling repo `tng-data-persona`.
 
 ## Source data
 
@@ -33,8 +34,8 @@ The pipeline reads only the `scripts/NextGen/*.txt` transcripts from that source
 ## Quick start
 
 ```bash
-git clone --recurse-submodules https://github.com/EthanThatOneKid/tng-persona.git
-cd tng-persona
+git clone --recurse-submodules https://github.com/EthanThatOneKid/tng-computer-persona.git
+cd tng-computer-persona
 python -m scripts.run_pipeline
 ```
 
@@ -65,6 +66,6 @@ The earlier `enterprise-computer` repo focused on extracting computer exchanges 
 - Data's literal precision
 - other TNG speaking styles through aggregated speaker profiles
 
-If you are looking for the archived predecessor repo, use `enterprise-computer` or `startrek-computer` only for historical context. This repo is the active one.
+If you are looking for the archived predecessor repo, use `enterprise-computer` or `startrek-computer` only for historical context. This repo is the active one for the shared TNG computer corpus.
 
 The pipeline is deterministic and reproducible from raw transcripts. No API call is required to rebuild the committed dataset.
