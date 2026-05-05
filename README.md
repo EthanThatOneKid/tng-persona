@@ -9,6 +9,8 @@ This repository is the TNG-specific companion to the broader Star Trek computer 
 - speaker profiles for major TNG voices
 - training JSONL for both general TNG persona work and computer-specific tuning
 
+This is now the canonical home for the TNG Enterprise computer persona work that previously lived in `enterprise-computer` and `startrek-computer`.
+
 ## Source data
 
 Raw transcripts are vendored as a git submodule:
@@ -62,5 +64,7 @@ The earlier `enterprise-computer` repo focused on extracting computer exchanges 
 - Jean-Luc Picard's command voice
 - Data's literal precision
 - other TNG speaking styles through aggregated speaker profiles
+
+If you are looking for the archived predecessor repo, use `enterprise-computer` or `startrek-computer` only for historical context. This repo is the active one.
 
 The pipeline is deterministic and reproducible from raw transcripts. No API call is required to rebuild the committed dataset.
